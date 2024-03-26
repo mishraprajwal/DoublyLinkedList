@@ -20,6 +20,12 @@ public class DoublyLinkedList {
         DeleteNodesWithGreaterValueOnRight greaterValueOnRight = new DeleteNodesWithGreaterValueOnRight();
         greaterValueOnRight.deleteNodesWithGreaterValueOnRight(list);
 
+        System.out.println("The linked list after deleting nodes where greater value is on the right is now:");
+        list.display();
+
+        SwapNodesInPair swapper = new SwapNodesInPair();
+        swapper.swapNodes(list);
+
         System.out.println("The linked list is:");
         list.display();
 
