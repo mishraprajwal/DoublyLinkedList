@@ -26,10 +26,16 @@ public class DoublyLinkedList {
         SwapNodesInPair swapper = new SwapNodesInPair();
         swapper.swapNodes(list);
 
-        System.out.println("The linked list is:");
+        System.out.println("The linked list after swapping nodes in pairs is:");
         list.display();
 
+        RotateList rotator = new RotateList();
+        System.out.println("Enter the number by which you would like to rotate the list:");
+        int k = scanner.nextInt();
+        rotator.rotateListByK(list, k);
 
+        System.out.println("The linked list after rotation is:");
+        list.display();
 
         }
     }
