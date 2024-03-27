@@ -37,6 +37,14 @@ public class DoublyLinkedList {
         System.out.println("The linked list after rotation is:");
         list.display();
 
+        RemoveDuplicatesFromSortedList remover = new RemoveDuplicatesFromSortedList();
+        remover.removeDuplicatesFromSortedList(list);
+        
+        System.out.println("The linked list after removing duplicates is:");
+        list.display();
+
+
+
         }
     }
 
