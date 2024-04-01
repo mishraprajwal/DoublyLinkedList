@@ -43,7 +43,14 @@ public class DoublyLinkedList {
         System.out.println("The linked list after removing duplicates is:");
         list.display();
 
+        System.out.println("Enter the element by which you would like to partition th list:");
+        int x = scanner.nextInt();
 
+        PartitionList partitioner = new PartitionList();
+        partitioner.partitionList(list, x);
+
+        System.out.println("The linked list after partition is:");
+        list.display();
 
         }
     }
