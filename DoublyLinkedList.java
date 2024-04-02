@@ -52,6 +52,12 @@ public class DoublyLinkedList {
         System.out.println("The linked list after partition is:");
         list.display();
 
+        ReorderList reorderer = new ReorderList();
+        reorderer.reorderList(list);
+
+        System.out.println("The linked list after rotation is:");
+        list.display();
+
         }
     }
 
